@@ -52,7 +52,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
+                    <a th:href="@{/}" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -140,7 +140,7 @@
                             <tr>
                                 <th scope="row">
                                     <div class="d-flex align-items-center">
-                                        <img src="img/vegetable-item-3.png" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="">
+                                        <img th:src="@{/images/vegetable-item-3.png}" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;" alt="">
                                     </div>
                                 </th>
                                 <td>
@@ -177,7 +177,7 @@
                             <tr>
                                 <th scope="row">
                                     <div class="d-flex align-items-center">
-                                        <img src="img/vegetable-item-5.jpg" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;">
+                                        <img th:src="@{/images/vegetable-item-5.jpg}" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;">
                                     </div>
                                 </th>
                                 <td>
@@ -213,7 +213,7 @@
                             <tr>
                                 <th scope="row">
                                     <div class="d-flex align-items-center">
-                                        <img src="img/vegetable-item-2.jpg" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;">
+                                        <img th:src="@{/images/vegetable-item-2.jpg}" class="img-fluid me-5 rounded-circle" style="width: 80px; height: 80px;">
                                     </div>
                                 </th>
                                 <td>
@@ -349,7 +349,7 @@
                             <p>Email: Example@gmail.com</p>
                             <p>Phone: +0123 4567 8910</p>
                             <p>Payment Accepted</p>
-                            <img src="img/payment.png" class="img-fluid">
+                            <img th:src="@{/images/payment.png}" class="img-fluid">
                         </div>
                     </div>
                 </div>
