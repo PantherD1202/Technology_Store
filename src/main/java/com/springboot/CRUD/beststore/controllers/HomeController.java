@@ -20,6 +20,41 @@ public class HomeController {
 	public String viewHomePage(Model model) {
 		List<Product> products = repo.findAll(Sort.by(Sort.Direction.DESC, "id"));
 		model.addAttribute("products", products);
-		return "home";
+		return "index";
 	}
+
+    @GetMapping("/shop")
+    public String viewShopPage() {
+        return "shop";
+    }
+
+    @GetMapping("/shop-detail")
+    public String viewShopDetailPage() {
+        return "shop-detail";
+    }
+
+    @GetMapping("/cart")
+    public String viewCartPage() {
+        return "cart";
+    }
+
+    @GetMapping("/chackout")
+    public String viewCheckoutPage() {
+        return "chackout";
+    }
+
+    @GetMapping("/testimonial")
+    public String viewTestimonialPage() {
+        return "testimonial";
+    }
+
+    @GetMapping("/404")
+    public String view404Page() {
+        return "404";
+    }
+
+    @GetMapping("/contact")
+    public String viewContactPage() {
+        return "contact";
+    }
 }
