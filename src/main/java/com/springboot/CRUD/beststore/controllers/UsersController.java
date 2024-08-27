@@ -14,11 +14,6 @@ public class UsersController {
 	@Autowired
 	private UserRepository repo;
 
-//	@GetMapping("")
-//	public String viewHomePage() {
-//		return "home";
-//	}
-
 	@GetMapping("/register")
 	public String showSignUpForm(Model model) {
 		model.addAttribute("user", new User());
